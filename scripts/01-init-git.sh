@@ -41,7 +41,7 @@ git commit -m "Initial commit: FEM v1.0.0" 2>/dev/null || echo "✅ 이미 커�
 echo ""
 
 # 원격 저장소 설정
-REPO_URL="https://github.com/$GITHUB_USERNAME/fe-macro.git"
+REPO_URL="https://github.com/$GITHUB_USERNAME/fem.git"
 
 if git remote | grep -q "origin"; then
     echo "🔄 기존 origin 제거 중..."
@@ -59,7 +59,7 @@ echo ""
 echo "다음 단계:"
 echo "1. GitHub에서 저장소를 생성하세요:"
 echo "   👉 https://github.com/new"
-echo "   📝 저장소 이름: fe-macro"
+echo "   📝 저장소 이름: fem"
 echo "   📝 Public으로 설정"
 echo ""
 echo "2. 저장소 생성 후 다음 명령어를 실행하세요:"

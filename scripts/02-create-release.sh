@@ -13,7 +13,7 @@ if [ -z "$GITHUB_USERNAME" ]; then
     exit 1
 fi
 
-REPO_URL="https://github.com/$GITHUB_USERNAME/fe-macro"
+REPO_URL="https://github.com/$GITHUB_USERNAME/fem"
 RELEASE_URL="$REPO_URL/releases/new"
 
 echo ""

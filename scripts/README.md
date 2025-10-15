@@ -36,7 +36,7 @@ chmod +x scripts/*.sh
 - GitHub 사용자명
 
 **수동 작업:**
-1. GitHub에서 `fe-macro` 저장소 생성 (Public)
+1. GitHub에서 `fem` 저장소 생성 (Public)
 2. 다음 명령어 실행:
    ```bash
    git branch -M main
@@ -112,7 +112,7 @@ git push
 # 2. GitHub에서 새 Release 생성 (v1.1.0)
 
 # 3. SHA256 재계산 (스크립트 수정 필요)
-curl -sL https://github.com/yourusername/fe-macro/archive/refs/tags/v1.1.0.tar.gz | shasum -a 256
+curl -sL https://github.com/yourusername/fem/archive/refs/tags/v1.1.0.tar.gz | shasum -a 256
 
 # 4. homebrew-fem 저장소의 fem.rb 업데이트
 cd ../homebrew-fem

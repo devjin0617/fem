@@ -24,7 +24,7 @@ git add .
 git commit -m "Initial commit: FEM v1.0.0"
 
 # GitHub 저장소 연결 (저장소를 먼저 생성해야 함)
-git remote add origin https://github.com/yourusername/fe-macro.git
+git remote add origin https://github.com/yourusername/fem.git
 git branch -M main
 git push -u origin main
 ```
@@ -41,7 +41,7 @@ git push -u origin main
 
 GitHub가 자동으로 소스 코드 아카이브를 생성합니다:
 ```
-https://github.com/yourusername/fe-macro/archive/refs/tags/v1.0.0.tar.gz
+https://github.com/yourusername/fem/archive/refs/tags/v1.0.0.tar.gz
 ```
 
 ### 3단계: SHA256 해시 계산
@@ -49,7 +49,7 @@ https://github.com/yourusername/fe-macro/archive/refs/tags/v1.0.0.tar.gz
 릴리즈 후 tar.gz 파일의 SHA256 해시를 계산합니다:
 
 ```bash
-curl -sL https://github.com/yourusername/fe-macro/archive/refs/tags/v1.0.0.tar.gz | shasum -a 256
+curl -sL https://github.com/yourusername/fem/archive/refs/tags/v1.0.0.tar.gz | shasum -a 256
 ```
 
 출력 예시:
@@ -64,8 +64,8 @@ abc123def456...  -
 ```ruby
 class Fem < Formula
   desc "FEM (Frontend Macro) - Git merge helper for server branches"
-  homepage "https://github.com/yourusername/fe-macro"
-  url "https://github.com/yourusername/fe-macro/archive/refs/tags/v1.0.0.tar.gz"
+  homepage "https://github.com/yourusername/fem"
+  url "https://github.com/yourusername/fem/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "3단계에서 계산한 SHA256 해시값"
   version "1.0.0"
   license "MIT"
@@ -94,7 +94,7 @@ mkdir homebrew-fem
 cd homebrew-fem
 
 # fem.rb 복사
-cp ../fe-macro/fem.rb .
+cp ../fem/fem.rb .
 
 # Git 저장소 초기화
 git init
@@ -155,12 +155,12 @@ brew uninstall fem
 
 3. **SHA256 재계산**
    ```bash
-   curl -sL https://github.com/yourusername/fe-macro/archive/refs/tags/v1.1.0.tar.gz | shasum -a 256
+   curl -sL https://github.com/yourusername/fem/archive/refs/tags/v1.1.0.tar.gz | shasum -a 256
    ```
 
 4. **Formula 업데이트** (homebrew-fem 저장소)
    ```ruby
-   url "https://github.com/yourusername/fe-macro/archive/refs/tags/v1.1.0.tar.gz"
+   url "https://github.com/yourusername/fem/archive/refs/tags/v1.1.0.tar.gz"
    sha256 "새로운_SHA256_해시"
    version "1.1.0"
    ```

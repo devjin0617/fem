@@ -43,7 +43,7 @@ echo ""
 
 # fem.rb 복사
 echo "📋 fem.rb 파일 복사 중..."
-cp ../fe-macro/fem.rb .
+cp ../fem/fem.rb .
 
 echo "✅ fem.rb 복사 완료"
 echo ""

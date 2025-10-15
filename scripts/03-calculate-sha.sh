@@ -13,7 +13,7 @@ if [ -z "$GITHUB_USERNAME" ]; then
     exit 1
 fi
 
-TARBALL_URL="https://github.com/$GITHUB_USERNAME/fe-macro/archive/refs/tags/v1.0.0.tar.gz"
+TARBALL_URL="https://github.com/$GITHUB_USERNAME/fem/archive/refs/tags/v1.0.0.tar.gz"
 
 echo ""
 echo "📥 tar.gz 파일 다운로드 및 SHA256 계산 중..."
@@ -55,7 +55,7 @@ if [ -f "$FEM_RB" ]; then
     sed -i.tmp "s|sha256 \".*\"|sha256 \"$SHA256\"|" "$FEM_RB"
     
     # homepage 업데이트
-    sed -i.tmp "s|homepage \".*\"|homepage \"https://github.com/$GITHUB_USERNAME/fe-macro\"|" "$FEM_RB"
+    sed -i.tmp "s|homepage \".*\"|homepage \"https://github.com/$GITHUB_USERNAME/fem\"|" "$FEM_RB"
     
     # 임시 파일 제거
     rm -f "${FEM_RB}.tmp"
@@ -76,7 +76,7 @@ else
     cat << EOF
 class Fem < Formula
   desc "FEM (Frontend Macro) - Git merge helper for server branches"
-  homepage "https://github.com/$GITHUB_USERNAME/fe-macro"
+  homepage "https://github.com/$GITHUB_USERNAME/fem"
   url "$TARBALL_URL"
   sha256 "$SHA256"
   version "1.0.0"

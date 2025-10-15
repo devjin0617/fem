@@ -32,8 +32,8 @@ brew install yourusername/fem/fem
 
 ```bash
 # 저장소 클론
-git clone https://github.com/yourusername/fe-macro.git
-cd fe-macro
+git clone https://github.com/yourusername/fem.git
+cd fem
 
 # 설치 스크립트 실행
 ./install.sh
