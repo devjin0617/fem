@@ -1,8 +1,8 @@
 class Fem < Formula
   desc "FEM (Frontend Macro) - Git merge helper for server branches"
-  homepage "https://github.com/yourusername/fem"
-  url "https://github.com/yourusername/fem/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "YOUR_SHA256_HERE"
+  homepage "https://github.com/devjin0617/fem"
+  url "https://github.com/devjin0617/fem/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "58f688030437120da712050f865c54a49281707e88a7abc80b0c344b4e2db894"
   version "1.0.0"
   license "MIT"
 
@@ -17,4 +17,3 @@ class Fem < Formula
     system "#{bin}/fem", "--version"
   end
 end
-

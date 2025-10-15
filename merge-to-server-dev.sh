@@ -20,7 +20,7 @@ git pull origin server/dev
 
 # 이전 브랜치를 server/dev에 머지
 echo "$CURRENT_BRANCH 브랜치를 server/dev에 머지 중..."
-git merge $CURRENT_BRANCH
+git merge $CURRENT_BRANCH --no-edit -m "Merge branch '$CURRENT_BRANCH' into server/dev"
 
 if [ $? -ne 0 ]; then
     echo "❌ 머지 실패. 충돌을 해결해주세요."
